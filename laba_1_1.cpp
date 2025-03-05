@@ -41,7 +41,6 @@ int time(func_name *func, int N, unsigned int *arr, int size) {
     uniform_int_distribution<unsigned> dstr(0, 1'000'000);
 
     auto begin = chrono::steady_clock::now();
-
     for (unsigned cnt = N; cnt != 0; --cnt) {
         // func(arr, size, dstr(rng));
         func(arr, size, 1'000'001); // числа точно нет в массиве
